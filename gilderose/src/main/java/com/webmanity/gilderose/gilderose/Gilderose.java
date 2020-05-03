@@ -46,12 +46,11 @@ class GildedRose {
             	item.sellIn = item.sellIn - 1;
             }
 
-            if (item.sellIn < 0) {
-                if (item.name.equals(AGED_BRIE) && item.name.equals(BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT)) {
-                	
-                    if (item.quality < 50 && item.sellIn < 0) {
-                    	item.quality = item.quality + 1;
-                    }
+   
+            if (item.name.equals(AGED_BRIE) && item.name.equals(BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT)) {
+            	
+                if (item.quality < 50 && item.sellIn < 0) {
+                	item.quality = item.quality + 1;
                 }
             }
         }
