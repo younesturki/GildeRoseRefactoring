@@ -54,7 +54,7 @@ class GildedRoseTest {
     }
 	
 	 @Test
-	 void items6_when_applying_updateQuality_sellIn_equals_to_5() {
+	 void items6_when_applying_updateQuality_sellIn_equals_to_50() {
 	        assertEquals(50, app.items[6].quality);
 	    }
 	
