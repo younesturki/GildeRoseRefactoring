@@ -53,8 +53,26 @@ class GildedRoseTest {
         assertEquals(50, app.items[5].quality);
     }
 	
+	 @Test
+	 void items6_when_applying_updateQuality_sellIn_equals_to_5() {
+	        assertEquals(50, app.items[6].quality);
+	    }
 	
-    
+	 @Test
+	  void items0_when_applying_updateQuality_sellIn_equals_to_1() {
+        assertEquals(1, app.items[0].sellIn);
+    }
+	
+	 @Test
+	  void items4_when_applying_updateQuality_sellIn_equals_to_14() {
+       assertEquals(14, app.items[4].sellIn);
+   }
+	
+	 @Test
+	  void items5_when_applying_updateQuality_sellIn_equals_to_9() {
+       assertEquals(9, app.items[5].sellIn);
+   }
+	
    
 
 }

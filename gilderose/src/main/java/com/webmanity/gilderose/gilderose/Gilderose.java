@@ -25,6 +25,7 @@ class GildedRose {
             } else {
                 if (item.quality < 50) {
                 	item.quality = item.quality + 1;
+                	item.sellIn = item.sellIn - 1;
 
                     if (item.name.equals(BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT)) {
                         if (item.sellIn < 11) {
@@ -32,12 +33,9 @@ class GildedRose {
                             	item.quality = item.quality + 1;
                             }
                         }
+
                     }
                 }
-            }
-
-            if (!item.name.equals(SULFURAS_HAND_OF_RAGNAROS)) {
-            	item.sellIn = item.sellIn - 1;
             }
 
         }
