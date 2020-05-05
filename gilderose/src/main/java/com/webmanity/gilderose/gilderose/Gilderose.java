@@ -23,9 +23,9 @@ class GildedRose {
                     }
                 }
             } else {
+            	item.sellIn = item.sellIn - 1;
                 if (item.quality < 50) {
                 	item.quality = item.quality + 1;
-                	item.sellIn = item.sellIn - 1;
 
                     if (item.name.equals(BACKSTAGE_PASSES_TO_A_TAFKAL80ETC_CONCERT)) {
                         if (item.sellIn < 11) {
